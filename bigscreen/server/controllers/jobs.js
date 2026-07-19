@@ -1,0 +1,1 @@
+const db=require('../config/db');exports.getJobs=async(req,res)=>{try{const[rows]=await db.query('SELECT * FROM jobs');res.json(rows)}catch(e){res.json([])}};
