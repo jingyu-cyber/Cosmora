@@ -1,0 +1,1 @@
+package com.example.lessondesign.bean; import lombok.Data; import java.util.Date; @Data public class ClassExercise { private Integer id; private Integer classId; private Integer exerciseId; private Date createdAt; private Date endTime; }
