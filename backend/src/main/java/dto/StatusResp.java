@@ -1,0 +1,1 @@
+package com.example.lessondesign.dto; import lombok.Data; import java.util.*; @Data public class StatusResp { private boolean flag; private int code; private String desc; private List<Datas> data; @Data public static class Datas { private String fileId; private String fileStatus; } }
