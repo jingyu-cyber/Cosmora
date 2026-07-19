@@ -1,0 +1,1 @@
+package com.example.lessondesign.dto; import lombok.Data; @Data public class UploadResp { private boolean flag; private int code; private String desc; private Datas data; private String sid; @Data public static class Datas { private String fileId; } }
