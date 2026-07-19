@@ -1,0 +1,1 @@
+const express=require('express');const cors=require('cors');const jobsRouter=require('./routes/jobs');const app=express();app.use(cors());app.use(express.json());app.use('/api/jobs',jobsRouter);app.listen(5011,()=>console.log('Big screen server on 5011'));
