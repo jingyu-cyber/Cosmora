@@ -1,0 +1,1 @@
+<template><div class="policy-matcher"><h3>Policy Matcher</h3><slot/></div></template><script>export default{name:"PolicyMatcher"}</script>
