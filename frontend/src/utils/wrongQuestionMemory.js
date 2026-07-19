@@ -1,0 +1,3 @@
+const KEY='cosmora_wrong_question_memory';
+export function getWrongQuestions(user){ try{ const k=KEY+'_'+(user?.userId||'demo'); return JSON.parse(localStorage.getItem(k)||'[]'); }catch(e){return[];} }
+export function addWrongQuestion(user,q){ try{const k=KEY+'_'+(user?.userId||'demo');const arr=JSON.parse(localStorage.getItem(k)||'[]');arr.push({...q,time:Date.now()});localStorage.setItem(k,JSON.stringify(arr));window.dispatchEvent(new Event('cosmora-learning-memory-updated'))}catch(e){}}
