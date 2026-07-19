@@ -1,0 +1,1 @@
+package com.example.lessondesign.bean; import lombok.Data; import java.util.Date; @Data public class TeacherDesign { private Integer id; private String courseName; private String teacherId; private String content; private String sLevel; private Date createdTime; }
