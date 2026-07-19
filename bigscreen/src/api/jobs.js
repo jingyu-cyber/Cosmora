@@ -1,0 +1,1 @@
+import axios from "axios";const BASE="http://localhost:5011/api";export async function getJobs(params){const r=await axios.get(BASE+"/jobs",{params});return r.data;}export async function getJobStats(){const r=await axios.get(BASE+"/jobs/stats");return r.data;}
