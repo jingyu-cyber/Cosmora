@@ -1,0 +1,8 @@
+flask
+dotenv
+ollama
+faster-whisper
+opencv-python
+fer
+numpy
+Pillow
