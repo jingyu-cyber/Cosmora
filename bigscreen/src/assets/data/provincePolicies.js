@@ -1,0 +1,1 @@
+export default {"Beijing":{"talent":"Hukou points","subsidy":"Housing subsidy"},"Shanghai":{"talent":"Settlement policy","subsidy":"Rental subsidy"},"Guangdong":{"talent":"Talent green card","subsidy":"Startup fund"},"Zhejiang":{"talent":"Digital talent plan","subsidy":"Innovation fund"}};
