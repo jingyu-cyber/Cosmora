@@ -1,0 +1,1 @@
+package com.example.lessondesign.bean; import lombok.Data; @Data public class ExerciseQuestionRel { private Long id; private Integer exerciseId; private Long questionId; private Integer seq; }
