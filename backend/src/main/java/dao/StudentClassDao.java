@@ -1,0 +1,1 @@
+package com.example.lessondesign.dao; import org.apache.ibatis.annotations.*; @Mapper public interface StudentClassDao { @Insert("INSERT INTO student_class (class_id, student_id) VALUES (#{cid}, #{sid})") void insertStudentClass(@Param("cid") int cid, @Param("sid") String sid); }
