@@ -1,0 +1,1 @@
+<template><el-dialog :visible="visible" @close="$emit('close')"><slot/></el-dialog></template><script>export default{name:"DetailModal",props:{visible:Boolean}}</script>
