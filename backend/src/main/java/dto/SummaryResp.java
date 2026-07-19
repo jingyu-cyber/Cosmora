@@ -1,0 +1,1 @@
+package com.example.lessondesign.dto; import lombok.Data; @Data public class SummaryResp { private boolean flag; private int code; private String desc; private Datas data; @Data public static class Datas { private String summaryStatus; private String summary; } }
