@@ -1,0 +1,1 @@
+<template><div class="job-alert"><h3>Job Alerts</h3><slot/></div></template><script>export default{name:"JobAlert"}</script>
