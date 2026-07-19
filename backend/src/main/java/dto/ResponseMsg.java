@@ -1,0 +1,1 @@
+package com.example.lessondesign.dto; import lombok.Data; @Data public class ResponseMsg { private boolean flag; private int code; private String desc; private String sid; }
