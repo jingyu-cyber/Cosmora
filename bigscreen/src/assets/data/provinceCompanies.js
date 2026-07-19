@@ -1,0 +1,1 @@
+export default {"Beijing":["Baidu","ByteDance","JD.com"],"Shanghai":["Pinduoduo","Bilibili"],"Guangdong":["Tencent","Huawei","DJI"],"Zhejiang":["Alibaba","NetEase"],"Jiangsu":["Suzhou Industrial Park"]};
