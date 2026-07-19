@@ -1,0 +1,2 @@
+// TTS service wrapper
+export async function speak(text){if(window.speechSynthesis){const u=new SpeechSynthesisUtterance(text);u.lang="zh-CN";speechSynthesis.speak(u);return}const r=await fetch("/api/voice/tts",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text})});const d=await r.json();if(d.audioBase64){const a=new Audio("data:audio/wav;base64,"+d.audioBase64);a.play()}}
