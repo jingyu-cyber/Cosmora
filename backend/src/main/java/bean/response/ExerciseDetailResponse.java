@@ -1,0 +1,1 @@
+package com.example.lessondesign.bean.response; import com.example.lessondesign.bean.*; import lombok.Data; import java.util.*; @Data public class ExerciseDetailResponse { private Exercise exerciseInfo; private ClassExercise assignmentInfo; private List<ExerciseQuestion> questions; }
