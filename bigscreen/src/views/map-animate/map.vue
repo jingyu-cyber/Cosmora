@@ -1,0 +1,1 @@
+<template><div class="map-level"><div class="data-title"><div class="title-text">Qiongjing Cosmora</div></div><div class="canvas-container"><canvas id="canvas"></canvas></div></div></template><script>export default{name:'ChinaMap',mounted(){this.initMap()},methods:{initMap(){console.log('3D Map initialized')}}}</script>
