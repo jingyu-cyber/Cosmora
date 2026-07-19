@@ -1,0 +1,1 @@
+export default {"Beijing":200,"Shanghai":180,"Guangdong":250,"Zhejiang":150,"Jiangsu":130,"Sichuan":110,"Hubei":90,"Shandong":85};
