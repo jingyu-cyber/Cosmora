@@ -1,0 +1,11 @@
+-- Qiongjing Cosmora Database Schema
+CREATE DATABASE IF NOT EXISTS teacher_course;
+USE teacher_course;
+CREATE TABLE user (user_id VARCHAR(255) PRIMARY KEY, username VARCHAR(255), password VARCHAR(255), role VARCHAR(50), phone VARCHAR(20), title VARCHAR(100), email VARCHAR(255), gender VARCHAR(20), research TEXT, target_direction VARCHAR(255), school_id INT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE course (id INT AUTO_INCREMENT PRIMARY KEY, course_name VARCHAR(255), introduction TEXT, type VARCHAR(100));
+CREATE TABLE class (id INT AUTO_INCREMENT PRIMARY KEY, class_name VARCHAR(255), course_id INT, t_id VARCHAR(255), semester VARCHAR(255), weeks INT, location VARCHAR(255), start_time VARCHAR(50), finish_time VARCHAR(50), number INT, progress VARCHAR(255));
+CREATE TABLE exercise (id INT AUTO_INCREMENT PRIMARY KEY, theme VARCHAR(255), content TEXT, title VARCHAR(255), type VARCHAR(100), degree VARCHAR(50), number INT, total_score DECIMAL(5,2), status VARCHAR(50), creator_id BIGINT, created_at TIMESTAMP, updated_at TIMESTAMP, end_time DATETIME);
+CREATE TABLE exercise_question (id INT AUTO_INCREMENT PRIMARY KEY, content TEXT, type VARCHAR(50), options_json TEXT, answer TEXT, analysis TEXT, score DECIMAL(5,2), difficulty VARCHAR(50), knowledge_point VARCHAR(255), creator_id VARCHAR(255), created_at TIMESTAMP, updated_at TIMESTAMP);
+CREATE TABLE e_condition (id INT AUTO_INCREMENT PRIMARY KEY, exercise_id INT, u_id VARCHAR(255), score DECIMAL(5,2), submit_time TIMESTAMP, wrong_number VARCHAR(255), wrong_count INT, total_questions INT, correct_count INT, time_spent INT, submit_status VARCHAR(50), teacher_comment TEXT);
+CREATE TABLE school (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), location VARCHAR(255));
+CREATE TABLE teacher_design (id INT AUTO_INCREMENT PRIMARY KEY, course_name VARCHAR(255), teacher_id VARCHAR(255), content TEXT, s_level VARCHAR(50), created_time TIMESTAMP);
