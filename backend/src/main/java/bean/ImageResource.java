@@ -1,0 +1,1 @@
+package com.example.lessondesign.bean; import lombok.Data; @Data public class ImageResource { private Long id; private String title; private String type; private String url; private String description; private boolean favorite; private String timestamp; }
