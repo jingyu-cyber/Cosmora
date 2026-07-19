@@ -1,0 +1,1 @@
+package com.example.lessondesign.bean; import lombok.Data; @Data public class CreateResponse { private boolean flag; private int code; private String desc; private Data data; @lombok.Data public static class Data { private String sid; private int totalPages; private int donePages; private String pptStatus; private String pptUrl; private String errMsg; } }
