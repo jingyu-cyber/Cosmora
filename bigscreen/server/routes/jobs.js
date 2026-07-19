@@ -1,0 +1,1 @@
+const express=require('express');const router=express.Router();const db=require('../config/db');router.get('/',async(req,res)=>{try{const [rows]=await db.query('SELECT * FROM jobs LIMIT 100');res.json(rows)}catch(e){res.json([])}});module.exports=router;
