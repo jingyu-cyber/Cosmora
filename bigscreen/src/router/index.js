@@ -1,0 +1,1 @@
+import {createRouter,createWebHashHistory} from 'vue-router'; const routes=[{path:'/',redirect:'/three-3d-map'},{path:'/three-3d-map',component:()=>import('../views/map-animate/map.vue')}]; export default createRouter({history:createWebHashHistory(),routes});
