@@ -1,0 +1,2 @@
+// MiniMax TTS service integration
+export async function synthesizeSpeech(text,voice="female"){const r=await fetch("/api/voice/tts",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text,voice})});return await r.json();}
