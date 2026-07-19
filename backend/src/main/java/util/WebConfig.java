@@ -1,0 +1,1 @@
+package com.example.lessondesign.util; import org.springframework.context.annotation.Configuration; import org.springframework.web.servlet.config.annotation.*; @Configuration public class WebConfig implements WebMvcConfigurer { @Override public void addResourceHandlers(ResourceHandlerRegistry r){ r.addResourceHandler("/**").addResourceLocations("classpath:/static/"); } }
