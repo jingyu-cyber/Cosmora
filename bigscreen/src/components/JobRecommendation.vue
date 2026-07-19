@@ -1,0 +1,1 @@
+<template><div class="job-recommendation"><h3>Job Recommendations</h3><slot/></div></template><script>export default{name:"JobRecommendation"}</script>
