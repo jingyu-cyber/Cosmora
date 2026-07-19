@@ -1,0 +1,2 @@
+// Utility functions
+export function formatNumber(n){return n>=10000?(n/10000).toFixed(1)+"w":n>=1000?(n/1000).toFixed(1)+"k":String(n)};export function debounce(fn,delay=300){let t;return function(...args){clearTimeout(t);t=setTimeout(()=>fn.apply(this,args),delay)}}
